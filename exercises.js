@@ -78,3 +78,21 @@ function divisibleSumPairs(n, k, ar) {
 
 }
 
+/* Esercizio 5 */
+
+function compareTriplets(a, b) {
+    let Alice_points = 0;
+    let Bob_points = 0;
+    for (let i = 0; i < a.length; i++) {
+        if(a[i] > b[i]){
+            Alice_points++;
+        } else if(a[i] < b[i]){
+            Bob_points++;
+        }
+    }
+    
+    const result = [Alice_points, Bob_points];
+    return result;
+}
+
+/* Esercizio 6 */
